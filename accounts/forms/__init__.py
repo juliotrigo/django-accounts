@@ -4,6 +4,6 @@
 
 from __future__ import unicode_literals
 
-from accounts.forms.users import ExtendedUserCreationForm, ExtendedUserChangeForm
+from accounts.forms.users import CustomUserCreationForm, CustomUserChangeForm
 
-__all__ = ['ExtendedUserCreationForm', 'ExtendedUserChangeForm']
+__all__ = ['CustomUserCreationForm', 'CustomUserChangeForm']

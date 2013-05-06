@@ -5,13 +5,13 @@
 from django.contrib import admin
 from django.contrib import auth
 
-from accounts.models import ExtendedUser
-from accounts.forms import ExtendedUserCreationForm, ExtendedUserChangeForm
+from accounts.models import CustomUser
+from accounts.forms import CustomUserCreationForm, CustomUserChangeForm
 
-class ExtendedUserAdmin(auth.admin.UserAdmin):
+class CustomUserAdmin(auth.admin.UserAdmin):
     """ExtendedUser Admin."""
     
-    form = ExtendedUserChangeForm
-    add_form = ExtendedUserCreationForm
+    form = CustomUserChangeForm
+    add_form = CustomUserCreationForm
 
-admin.site.register(ExtendedUser, ExtendedUserAdmin)
+admin.site.register(CustomUser, CustomUserAdmin)

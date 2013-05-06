@@ -5,10 +5,10 @@
 from django import forms
 from django.contrib import auth
 
-from accounts.models import ExtendedUser
+from accounts.models import CustomUser
 
-class ExtendedUserCreationForm(auth.forms.UserCreationForm):
-    """A form for creating users."""
+class CustomUserCreationForm(auth.forms.UserCreationForm):
+    """A form to create users."""
     
     #https://groups.google.com/forum/?fromgroups=#!topic/django-users/kOVEy9zYn5c
     def clean_username(self):
@@ -16,17 +16,17 @@ class ExtendedUserCreationForm(auth.forms.UserCreationForm):
         # but it sets a nicer error message than the ORM. See #13147.
         username = self.cleaned_data["username"]
         try:
-            ExtendedUser._default_manager.get(username=username)
-        except ExtendedUser.DoesNotExist:
+            CustomUser._default_manager.get(username=username)
+        except CustomUser.DoesNotExist:
             return username
         raise forms.ValidationError(self.error_messages['duplicate_username'])
 
     
     class Meta(auth.forms.UserCreationForm.Meta):
-        model = ExtendedUser
+        model = CustomUser
 
-class ExtendedUserChangeForm(auth.forms.UserChangeForm):
-    """A form for updating users."""
+class CustomUserChangeForm(auth.forms.UserChangeForm):
+    """A form to update users."""
     
     class Meta(auth.forms.UserChangeForm.Meta):
-        model = ExtendedUser
+        model = CustomUser

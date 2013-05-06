@@ -4,6 +4,6 @@
 
 from __future__ import unicode_literals
 
-from accounts.models.users import ExtendedUser
+from accounts.models.users import CustomUser
 
-__all__ = ['ExtendedUser']
+__all__ = ['CustomUser']

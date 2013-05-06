@@ -5,9 +5,9 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
-class ExtendedUser(AbstractUser):
+class CustomUser(AbstractUser):
     """
-    Extended user model with some extra fields.
+    Custom user model with some extra fields.
     """
     
     date_of_birth = models.DateField(null=True, blank=True)
