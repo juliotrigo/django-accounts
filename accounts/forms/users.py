@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""accounts admin."""
+"""accounts user forms."""
 
 from django import forms
 from django.contrib import auth

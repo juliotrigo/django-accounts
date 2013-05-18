@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-18 22:28+0100\n"
+"PO-Revision-Date: 2013-05-18 21:32+0100\n"
+"Last-Translator: juliotrigo <juliotrigocom@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models/users.py:18
+msgid "date of birth"
+msgstr "fecha de nacimiento"
+
+#: models/users.py:19
+msgid "User's date of birth."
+msgstr "Fecha de nacimiento del usuario."
+
+#: models/users.py:21
+msgid "language"
+msgstr "idioma"
+
+#: models/users.py:22
+msgid "User's selected language."
+msgstr "Idioma seleccionado por el usuario."
+
+#: templates/accounts/login.xhtml:4
+msgid "login"
+msgstr "login"
+
+#: templates/accounts/login.xhtml:8
+msgid "Your username and password didn't match. Please try again."
+msgstr ""
+"Su nombre de usuario y contraseña no son correctos. Por favor inténtelo de "
+"nuevo."
+
+#: templates/accounts/login.xhtml:26
+msgid "Login"
+msgstr "Login"
+
+#: templates/accounts/logout.xhtml:4
+msgid "logout"
+msgstr "logout"
+
+#: templates/accounts/logout.xhtml:7
+msgid "You have logged out."
+msgstr "Ha cerrado la sessión."
+
+#: templates/accounts/profile.xhtml:4 templates/accounts/profile.xhtml.py:7
+msgid "User profile"
+msgstr "Perfil de usuario"
+
+#: templates/accounts/profile.xhtml:14
+msgid "First name"
+msgstr "Nombre"
+
+#: templates/accounts/profile.xhtml:18
+msgid "Last name"
+msgstr "Apellidos"
+
+#: templates/accounts/profile.xhtml:22
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: templates/accounts/profile.xhtml:26
+msgid "Last login"
+msgstr "Último acceso"
+
+#: templates/accounts/profile.xhtml:30
+msgid "Date joined"
+msgstr "Fecha de registro"
+
+#: templates/accounts/profile.xhtml:34
+msgid "Date of birth"
+msgstr "Fecha de nacimiento"
+
+#: templates/accounts/profile.xhtml:38
+msgid "Language"
+msgstr "Idioma"

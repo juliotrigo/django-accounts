@@ -9,7 +9,7 @@ from accounts.models import CustomUser
 from accounts.forms import CustomUserCreationForm, CustomUserChangeForm
 
 class CustomUserAdmin(auth.admin.UserAdmin):
-    """ExtendedUser Admin."""
+    """CustomUser Admin."""
     
     form = CustomUserChangeForm
     add_form = CustomUserCreationForm

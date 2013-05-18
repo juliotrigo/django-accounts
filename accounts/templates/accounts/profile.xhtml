@@ -1,34 +1,42 @@
 {% extends "base.xhtml" %}
 {% load i18n %}
 
-{% block title %}User profile{% endblock %}
+{% block title %}{% trans "User profile" %}{% endblock %}
 
 {% block content %}
-    <h1>User profile</h1>
+    <h1>{% trans "User profile" %}</h1>
     
     <table>
         <tr>
             <th colspan="2">{{ user.get_username }}</th>
         </tr>
         <tr>
-            <td>First name</td>
+            <td>{% trans "First name" %}</td>
             <td>{{ user.get_first_name }}</td>
         </tr>
         <tr>
-            <td>Last name</td>
+            <td>{% trans "Last name" %}</td>
             <td>{{ user.get_last_name }}</td>
         </tr>
         <tr>
-            <td>Email</td>
+            <td>{% trans "Email" %}</td>
             <td>{{ user.email }}</td>
         </tr>
         <tr>
-            <td>Last login</td>
+            <td>{% trans "Last login" %}</td>
             <td>{{ user.last_login }}</td>
         </tr>
         <tr>
-            <td>Date joined</td>
+            <td>{% trans "Date joined" %}</td>
             <td>{{ user.date_joined }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Date of birth" %}</td>
+            <td>{{ user.date_of_birth }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Language" %}</td>
+            <td>{{ user.language }}</td>
         </tr>
     </table>
 {% endblock %}
