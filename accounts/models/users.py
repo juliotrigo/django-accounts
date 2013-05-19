@@ -14,11 +14,9 @@ class CustomUser(AbstractUser):
     The custom user model contains some extra fields.
     """
     
-    date_of_birth = models.DateField(null=True, blank=True,
-                                     verbose_name=_("date of birth"),
+    date_of_birth = models.DateField(_("date of birth"), null=True, blank=True,
                                      help_text=_("User's date of birth."))
-    language = models.CharField(max_length=5, blank=True, choices=settings.LANGUAGES,
-                                verbose_name=_("language"),
+    language = models.CharField(_("language"), max_length=5, blank=True, choices=settings.LANGUAGES,
                                 help_text=_("User's selected language."))
     
     class Meta(AbstractUser.Meta):
