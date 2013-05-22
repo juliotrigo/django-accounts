@@ -2,8 +2,7 @@
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import login, logout
-from django.shortcuts import render_to_response
-from django.template import RequestContext
+from django.shortcuts import render
 from django.views.i18n import set_language
 
 DJANGO_LANGUAGE = 'django_language'
@@ -12,8 +11,7 @@ LANGUAGE_FIELD = 'language'
 @login_required
 def profile(request):
     """Custom profile view."""
-    return render_to_response('accounts/profile.xhtml', 
-                              context_instance=RequestContext(request))
+    return render(request, 'accounts/profile.xhtml')
 
 def custom_login(request, *args, **kwargs):
     """Custom login function which wraps Django's login view."""
