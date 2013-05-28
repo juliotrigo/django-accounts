@@ -11,7 +11,7 @@ LANGUAGE_FIELD = 'language'
 @login_required
 def profile(request):
     """Custom profile view."""
-    return render(request, 'accounts/profile.xhtml')
+    return render(request, 'accounts/profile.html')
 
 def custom_login(request, *args, **kwargs):
     """Custom login function which wraps Django's login view."""
