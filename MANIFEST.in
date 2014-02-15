@@ -1,0 +1,11 @@
+include LICENSE
+include README.md
+include MANIFEST.in
+recursive-include accounts/locale/es/LC_MESSAGES *
+recursive-include accounts/templates/accounts *
+recursive-exclude accounts __pycache__
+recursive-exclude accounts *.py[co]
+recursive-exclude accounts/forms __pycache__
+recursive-exclude accounts/forms *.py[co]
+recursive-exclude accounts/models __pycache__
+recursive-exclude accounts/models *.py[co]
