@@ -7,9 +7,11 @@ from django.contrib import auth
 
 from accounts.models import CustomUser
 
+
 class CustomUserCreationForm(auth.forms.UserCreationForm):
+
     """A form to create users."""
-    
+
     #https://groups.google.com/forum/?fromgroups=#!topic/django-users/kOVEy9zYn5c
     def clean_username(self):
         # Since User.username is unique, this check is redundant,
@@ -21,12 +23,13 @@ class CustomUserCreationForm(auth.forms.UserCreationForm):
             return username
         raise forms.ValidationError(self.error_messages['duplicate_username'])
 
-    
+
     class Meta(auth.forms.UserCreationForm.Meta):
         model = CustomUser
 
 class CustomUserChangeForm(auth.forms.UserChangeForm):
+
     """A form to update users."""
-    
+
     class Meta(auth.forms.UserChangeForm.Meta):
         model = CustomUser

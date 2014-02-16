@@ -8,9 +8,11 @@ and returns a dictionary to add to the context.
 
 These are referenced from the setting TEMPLATE_CONTEXT_PROCESSORS and used by
 RequestContext.
+
 """
 
 from __future__ import unicode_literals
+
 
 def url(request):
     """
